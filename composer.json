@@ -18,5 +18,10 @@
                 "Avram\\Caffeinated\\Providers\\DatabaseModulesServiceProvider"
             ]
         }
-    }
+    },
+    "autoload": {
+        "psr-4": {
+            "Avram\\Caffeinated\\": "src/"
+        }
+    },
 }
