@@ -98,4 +98,9 @@ class DatabaseRepository extends LocalRepository
     {
         return \Schema::hasTable('modules') ? \DB::table('modules')->get()->toBase() : new Collection();
     }
+
+    protected function getManifestPath($slug)
+    {
+        return $this->getModulePath($slug).config('modules.manifest_file', 'module.json');
+    }
 }
