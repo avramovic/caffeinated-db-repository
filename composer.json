@@ -1,0 +1,22 @@
+{
+    "name": "avram/caffeinated-db-repository",
+    "description": "Database repository for caffeinated/modules",
+    "type": "library",
+    "require": {
+        "caffeinated/modules": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nemanja Avramović",
+            "email": "avramyu@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Avram\\Caffeinated\\Providers\\DatabaseModulesServiceProvider"
+            ]
+        }
+    }
+}
